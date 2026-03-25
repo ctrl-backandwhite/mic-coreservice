@@ -39,6 +39,7 @@
         <testcontainers.version>1.19.8</testcontainers.version>
         <springdoc.version>3.0.2</springdoc.version>
         <elasticsearch.version>8.11.0</elasticsearch.version>
+        <avro.version>1.12.0</avro.version>
         <mockito.version>5.20.0</mockito.version>
         <argLine></argLine>
     </properties>

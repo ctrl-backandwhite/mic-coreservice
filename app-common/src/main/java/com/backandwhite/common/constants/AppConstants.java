@@ -79,6 +79,7 @@ public final class AppConstants {
     public static final String KAFKA_TOPIC_PRICING_PROMOTION_EXPIRED = "pricing.promotion.expired";
 
     // ========== Tópicos de Kafka — Notificación ==========
+    public static final String KAFKA_TOPIC_NOTIFICATION_EMAIL = "notification.email.send";
     public static final String KAFKA_TOPIC_CMS_CONTACT_MESSAGE_RECEIVED = "cms.contact.message-received";
 
     // ========== Tópicos de Kafka — Media ==========

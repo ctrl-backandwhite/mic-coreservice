@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "EmailNotificationEvent",
+  "namespace": "com.backandwhite.core.kafka.avro",
+  "doc": "Evento Avro para notificaciones de correo electrónico enviadas a través de Kafka.",
+  "fields": [
+    {
+      "name": "recipient",
+      "type": "string",
+      "doc": "Dirección de correo electrónico del destinatario."
+    },
+    {
+      "name": "subject",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Asunto del correo electrónico."
+    },
+    {
+      "name": "templateName",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Nombre del template de notificación (e.g. account-activation, welcome-email)."
+    },
+    {
+      "name": "variables",
+      "type": ["null", {"type": "map", "values": "string"}],
+      "default": null,
+      "doc": "Mapa de variables dinámicas para el template del correo."
+    }
+  ]
+}
